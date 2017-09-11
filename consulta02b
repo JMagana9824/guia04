@@ -1,0 +1,4 @@
+SELECT t.idCategoria, t.nombre, COUNT (t.idCategoria) as maxi FROM Categoria t
+JOIN t.postList p
+GROUP BY t.idCategoria 
+ORDER BY maxi DESC

@@ -1,0 +1,6 @@
+SELECT t.nombres, t.apellidos,p.titulo,p.fecha From Usuario t
+JOIN t.usuarioRolCategoriaList urc
+JOIN urc.rolCategoria rc 
+JOIN rc.pasoList pl
+JOIN pl.postPasoList ppl
+JOIN ppl.post p
